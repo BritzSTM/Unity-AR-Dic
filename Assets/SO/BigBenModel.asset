@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251619105207ff042bfb42dbc4811e50, type: 3}
+  m_Name: BigBenModel
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3252806807811136690, guid: f3a4eedca2dddbc4f9d3e6511ab80f45, type: 3}
+  Img: {fileID: 2800000, guid: a70f02291e3b13a4a9fc20768f66e0e2, type: 3}
+  TTSDatas:
+  - VoiceType: 0
+    Text: "\uC774\uB984 : \uBE45 \uBCA4"
+  - VoiceType: 0
+    Text: "\uC704\uCE58 : \uC601\uAD6D \uB7F0\uB358"
+  - VoiceType: 0
+    Text: "\uBE45 \uBCA4\uC740 \uC601\uAD6D \uB7F0\uB358\uC758 \uC6E8\uC2A4\uD2B8\uBBFC\uC2A4\uD130
+      \uAD81\uC804 \uBD81\uCABD \uD754\uD788 \uC885\uBFD0\uB9CC \uC544\uB2C8\uB77C
+      \uC2DC\uACC4\uD0D1 \uC790\uCCB4\uB3C4 \uBE45 \uBCA4\uC774\uB77C\uACE0 \uBD80\uB978\uB2E4.
+      \uC2DC\uACC4\uD0D1\uC758 4\uBA74\uC5D0\uB294 \uC138\uACC4\uC5D0\uC11C \uAC00\uC7A5
+      \uD070 \uC790\uBA85\uC885 \uC2DC\uACC4\uAC00 \uB2EC\uB824 \uC788\uB2E4.<break/>\n1859\uB144\uC5D0
+      \uC138\uC6CC\uC9C4 \uBE45 \uBCA4\uC740 \uC218\uB9CE\uC740 \uC791\uD488\uC5D0\uC11C
+      \uB7F0\uB358\uC744 \uC0C1\uC9D5\uD558\uB294 \uC7A5\uC18C\uB85C \uB4F1\uC7A5\uD55C
+      \uBC14 \uC788\uC73C\uBA70, \uB9E4\uB144 \uC57D 12,000\uBA85\uC758 \uAD00\uAD11\uAC1D\uC774
+      \uCC3E\uB294 \uB300\uD45C\uC801\uC778 \uBA85\uC18C\uC774\uAE30\uB3C4 \uD558\uB2E4.\n"
+  TTSClip: {fileID: 0}
