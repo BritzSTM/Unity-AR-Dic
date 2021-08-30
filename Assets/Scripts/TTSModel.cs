@@ -17,8 +17,10 @@ public class TTSModel : MonoBehaviour
 
     private float _playDeployAnimeTime;
     private float _lastPlayRate;
+    private bool _playedTTS;
     private MeshRenderer _meshRenderer;
     private MaterialPropertyBlock _mpb;
+    private InfoUI _infoUI;
 
     private void Awake()
     {
@@ -28,6 +30,7 @@ public class TTSModel : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
         _meshRenderer = GetComponentInChildren<MeshRenderer>();
         _mpb = new MaterialPropertyBlock();
+        _infoUI = GetComponentInChildren<InfoUI>();
 
         Debug.Assert(_ttsManager != null);
     }
@@ -36,6 +39,8 @@ public class TTSModel : MonoBehaviour
     {
         _playDeployAnimeTime = 0.0f;
         _lastPlayRate = 0.0f;
+        _playedTTS = false;
+        _infoUI.gameObject.SetActive(false);
 
         if (_modelSO.TTSClip == null)
         {
@@ -65,13 +70,19 @@ public class TTSModel : MonoBehaviour
 
     private void AnimeDepoly()
     {
+        // 기존 쉐이더 작성할걸 방향성만 변경하여 재생률에 문제가 있음
+        // 현재 1.0 배치율은 실제로는 0.3임
+
         if (!_IsPlayDeployAnime && _lastPlayRate >= 1.0f)
             return;
 
-        _playDeployAnimeTime += Time.deltaTime;
+        // 보정했음
+        _playDeployAnimeTime += (Time.deltaTime / 3.0f);
 
         _lastPlayRate = _playDeployAnimeTime / _targetDeployAnimeTime;
-        if (_lastPlayRate < 1.0f)
+
+        // 현재 쉐이더의 0.3이 == 1
+        if (_lastPlayRate < 0.3f)
         {
             _mpb.SetFloat(Shader.PropertyToID("_DeployRate"), _lastPlayRate);
             _meshRenderer.SetPropertyBlock(_mpb);
@@ -79,7 +90,16 @@ public class TTSModel : MonoBehaviour
         else
         {
             _meshRenderer.SetPropertyBlock(null);
-            _audioSource.Play();
+
+            if (!_playedTTS)
+            {
+                _audioSource.Play();
+                _playedTTS = true;
+
+                _infoUI.Name.text = _modelSO.TTSDatas[0].Text;
+                _infoUI.Desc.text = _modelSO.TTSDatas[1].Text;
+                _infoUI.gameObject.SetActive(true);
+            }
         }
     }
 }

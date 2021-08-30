@@ -44,7 +44,7 @@ public class ARTIDeployManager : MonoBehaviour
                 }
 
                 Debug.Log($"inst{pickedModel.Prefab.name}");
-                var inst = Instantiate(pickedModel.Prefab, plane.transform.position, Quaternion.identity);
+                var inst = Instantiate(pickedModel.Prefab, plane.transform.position, plane.transform.rotation);
                 _instanceMap[plane.trackableId] = inst;
             }
         }

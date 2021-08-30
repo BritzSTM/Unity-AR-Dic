@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ce081718cb71913f04",
         "name": "com.DefaultCompany.UnityARDic",
-        "processId": 19679,
+        "processId": 32283,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -17,103 +17,61 @@
         {
             "deviceId": "ce081718cb71913f04",
             "name": "com.DefaultCompany.UnityARDic",
-            "processId": 6279,
-            "exited": true
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 8537,
-            "exited": true
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 9998,
-            "exited": true
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 11597,
-            "exited": true
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 13693,
-            "exited": true
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 15880,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 17823,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 19885,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 22151,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 26816,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 28344,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
-            "processId": 30278,
-            "exited": false
-        },
-        {
-            "deviceId": "ce081718cb71913f04",
-            "name": "com.DefaultCompany.UnityARDic",
             "processId": 4904,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "ce081718cb71913f04",
             "name": "com.DefaultCompany.UnityARDic",
             "processId": 9895,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "ce081718cb71913f04",
             "name": "com.DefaultCompany.UnityARDic",
             "processId": 11962,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "ce081718cb71913f04",
             "name": "com.DefaultCompany.UnityARDic",
             "processId": 17383,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "ce081718cb71913f04",
             "name": "com.DefaultCompany.UnityARDic",
             "processId": 19679,
+            "exited": true
+        },
+        {
+            "deviceId": "ce081718cb71913f04",
+            "name": "com.android.chrome",
+            "processId": 10861,
+            "exited": false
+        },
+        {
+            "deviceId": "ce081718cb71913f04",
+            "name": "com.DefaultCompany.UnityARDic",
+            "processId": 32283,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN300FF9Z",
+            "name": "com.DefaultCompany.UnityARDic",
+            "processId": 30500,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN300FF9Z",
+            "name": "com.DefaultCompany.UnityARDic",
+            "processId": 3308,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN300FF9Z",
+            "name": "com.DefaultCompany.UnityARDic",
+            "processId": 5768,
             "exited": false
         }
     ],
