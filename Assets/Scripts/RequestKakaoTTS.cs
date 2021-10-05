@@ -53,8 +53,6 @@ public class RequestKakaoTTS : MonoBehaviour
 
     private IEnumerator DownloadAudioClip(byte[] bodyDatas)
     {
-        WWWForm form = new WWWForm();
-
         using (UnityWebRequest postReq = UnityWebRequestMultimedia.GetAudioClip(_requsetUrl, AudioType.MPEG))
         {
             postReq.method = "POST";
@@ -72,6 +70,7 @@ public class RequestKakaoTTS : MonoBehaviour
                 res.TTSAudioClip = null;
                 res.Progress = -1.0f;
                 res.Log = postReq.error;
+                OnDownloaded.Invoke(res);
 
                 yield break;
             }
